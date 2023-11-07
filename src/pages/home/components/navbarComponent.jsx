@@ -18,7 +18,6 @@ export default function navbarComponent() {
       await signOut(auth);
       localStorage.clear();
       navigate("/");
-      console.log("AAAAAAAa");
     } catch (err) {
       console.error(err);
     }
