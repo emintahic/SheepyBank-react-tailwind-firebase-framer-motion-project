@@ -163,7 +163,7 @@ export const Home = () => {
               className="bg-cover  flex-grow max-w-full rounded-lg drop-shadow-sm "
               style={{ maxHeight: "270px", width: "540px" }}
             >
-              <img className="rounded-lg" src="src\assets\irelandsheep.png" />
+              <img className="rounded-lg" src="dist\assets\irelandsheep.png" />
               <motion.dt
                 initial={{ display: "none", opacity: 0 }}
                 animate={{ display: "inline-block", opacity: 1 }}
