@@ -160,7 +160,7 @@ export const Home = () => {
             <motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "100%", opacity: 1 }}
-              className="bg-cover  flex-grow max-w-full rounded-lg drop-shadow-sm "
+              className="bg-cover md:inline-block flex-grow max-w-full rounded-lg drop-shadow-sm sm:hidden "
               style={{ maxHeight: "270px", width: "540px" }}
             >
               <img className="rounded-lg" src="assets\irelandsheep.png" />
@@ -255,7 +255,7 @@ export const Home = () => {
                 })}
               </ul>
             </div>
-            <div className=" col-span-1 rounded-md">
+            <div className=" col-span-1 md:inline-block rounded-md sm:hidden">
               {goals.slice(0, 2).map((goal) => {
                 const { savingsName, finalAmount, currentAmount, id } = goal;
                 let numberCurrentAmount = Number(currentAmount);
