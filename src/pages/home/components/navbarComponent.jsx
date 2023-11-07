@@ -53,7 +53,7 @@ export default function navbarComponent() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-16 w-auto my-2 cursor-pointer"
-                    src="dist/assets/SHEEPYBANK_slim.png"
+                    src="assets/SHEEPYBANK_slim.png"
                     alt="SheepyBank"
                     onClick={navToHome}
                   />
