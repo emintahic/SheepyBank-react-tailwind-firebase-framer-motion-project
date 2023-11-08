@@ -89,7 +89,7 @@ export const Home = () => {
               </motion.dt>
             </motion.div>
             <div
-              className="px-10 rounded-lg h-72 py-9  bg-white text-left  sm:text-right font-semibold leading-7 text-gray-900 max-h-[270px] sm:max-w-[270px] max-w-[540px] w-[450px]"
+              className="px-10 rounded-lg h-72 py-9  bg-white text-left  sm:text-right font-semibold leading-7 text-gray-900 max-h-[270px] sm:max-w-[270px] max-w-[540px] w-full"
               // style={{ maxHeight: "270px", maxWidth: "270px" }}
             >
               <div className="absolute  -left-2 sm:-top-2 top-52 flex h-10 w-10 items-center justify-center rounded-lg bg-zelena-500 animate-bounce">
@@ -121,7 +121,7 @@ export const Home = () => {
               </dl>
             </div>
             <div
-              className=" px-10  rounded-lg py-10 bg-white max-h-[270px] sm:max-w-[270px] max-w-[540px] w-[450px]"
+              className=" px-10  rounded-lg py-10 bg-white max-h-[270px] sm:max-w-[270px] max-w-[540px] w-full"
               // style={{ maxHeight: "270px", maxWidth: "270px" }}
             >
               <form
