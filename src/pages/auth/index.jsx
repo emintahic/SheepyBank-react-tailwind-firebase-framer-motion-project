@@ -26,7 +26,7 @@ export const Auth = () => {
 
   return (
     <div
-      className="login-page h-screen bg-scroll bg-white   w-full   max-h-fit text-center mt-0"
+      className="login-page h-[1000px] bg-scroll bg-white   w-full   max-h-fit text-center mt-0"
       // initial={{ width: 0 }}
       // animate={{ width: "100%" }}
       // exit={{ x: window.innerWidth, transition: { duration: 0.03 } }}

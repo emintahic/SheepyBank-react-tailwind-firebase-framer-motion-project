@@ -130,7 +130,7 @@ export const Savings = () => {
                         bounce: 0,
                         opacity: { duration: t(0.03) },
                       }}
-                      className=" my-5 bg-white rounded-lg px-2 py-2 drop-shadow-sm"
+                      className=" my-5 bg-white rounded-lg px-2 py-2 drop-shadow-sm relative"
                     >
                       <button
                         className=" rounded-full w-6 h-6 hover:bg-gray-100 absolute right-[10px]  "
@@ -152,7 +152,7 @@ export const Savings = () => {
                           style={{ width: `${percentage.toFixed(1)}%` }}
                         ></motion.div>
                       </div>
-                      <div className="h-6">
+                      <div className="h-6 relative">
                         <dd className="text-left pl-10 text-base font-sans font-thin text-gray-900">
                           Saved: {cFormat.format(currentAmount)} /{" "}
                           {cFormat.format(finalAmount)}

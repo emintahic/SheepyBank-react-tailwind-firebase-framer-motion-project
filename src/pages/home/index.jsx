@@ -69,7 +69,7 @@ export const Home = () => {
             <motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "100%", opacity: 1 }}
-              className="bg-cover  flex-grow max-w-full rounded-lg drop-shadow-sm sm:hidden inline-block"
+              className="bg-cover  flex-grow max-w-full rounded-lg drop-shadow-sm sm:hidden inline-block relative"
               style={{ maxHeight: "270px", width: "540px" }}
             >
               <img className="rounded-lg" src="assets\irelandsheep.png" />
@@ -89,10 +89,10 @@ export const Home = () => {
               </motion.dt>
             </motion.div>
             <div
-              className="px-10 rounded-lg h-72 py-9  bg-white text-left  sm:text-right font-semibold leading-7 text-gray-900 max-h-[270px] sm:max-w-[270px] max-w-[540px] w-full"
+              className="px-10 rounded-lg h-72 py-9  bg-white text-left  sm:text-right font-semibold leading-7 text-gray-900 max-h-[270px] sm:max-w-[270px] max-w-[540px] w-full relative"
               // style={{ maxHeight: "270px", maxWidth: "270px" }}
             >
-              <div className="absolute  -left-2 sm:-top-2 top-52 flex h-10 w-10 items-center justify-center rounded-lg bg-zelena-500 animate-bounce">
+              <div className="absolute  -left-2 sm:-top-2 -top-2 flex h-10 w-10 items-center justify-center rounded-lg bg-zelena-500 animate-bounce">
                 <CurrencyDollarIcon
                   className=" h-6 w-6 text-white"
                   aria-hidden="true"
@@ -232,7 +232,7 @@ export const Home = () => {
                     id,
                   } = transaction;
                   return (
-                    <li className="bg-white border-t border-solid border-gray-200 w-full h-16 drop-shadow-none font-sans leading-6 ">
+                    <li className="bg-white border-t border-solid border-gray-200 w-full h-16 drop-shadow-none font-sans leading-6 relative ">
                       <button
                         className=" rounded-full w-6 h-6 hover:bg-gray-100 absolute right-1 top-0.5"
                         onClick={async () => {
