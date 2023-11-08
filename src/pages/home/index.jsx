@@ -76,7 +76,7 @@ export const Home = () => {
               <motion.dt
                 initial={{ display: "none", opacity: 0 }}
                 animate={{ display: "inline-block", opacity: 1 }}
-                className="absolute top-7 right-24 sm:text-6xl text-4xl font-medium font-sans text-gray-50"
+                className="absolute top-7 right-24 sm:text-6xl text-3xl font-medium font-sans text-gray-50"
               >
                 Hey, {name}
               </motion.dt>
@@ -215,7 +215,7 @@ export const Home = () => {
               <ul className="flex flex-col gap-2  items-start    ">
                 <dt className="text-xl font-medium font-sans relative text-center">
                   {" "}
-                  TRANSACTIONS
+                  TRANSACTIONS{" "}
                 </dt>
                 {transactions < 1 ? (
                   <dd className="  text-md text-gray-400 text-center mt-20 ml-64 static">
