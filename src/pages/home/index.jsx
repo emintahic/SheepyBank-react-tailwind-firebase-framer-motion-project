@@ -76,7 +76,7 @@ export const Home = () => {
               <motion.dt
                 initial={{ display: "none", opacity: 0 }}
                 animate={{ display: "inline-block", opacity: 1 }}
-                className="absolute top-7 right-24 sm:text-6xl text-3xl font-medium font-sans text-gray-50"
+                className="absolute capitalize top-7 right-24 sm:text-6xl text-3xl font-medium font-sans text-gray-50"
               >
                 Hey, {name}
               </motion.dt>
