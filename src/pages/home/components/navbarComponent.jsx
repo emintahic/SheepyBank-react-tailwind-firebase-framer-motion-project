@@ -35,7 +35,7 @@ export default function navbarComponent() {
     <Disclosure as="nav" className="bg-white drop-shadow-sm">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-1 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -49,7 +49,7 @@ export default function navbarComponent() {
                   )}
                 </Disclosure.Button> */}
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start drop-shadow-2xl">
+              <div className="flex flex-1 sm:items-center items-stretch justify-start drop-shadow-2xl">
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-16 w-auto my-2 cursor-pointer"
@@ -82,12 +82,12 @@ export default function navbarComponent() {
               <button
                 type="submit"
                 onClick={navToSavings}
-                className=" bg-zelena-500 rounded-md py-2 px-2 text-gray-100 hover:bg-zelena-600 drop-shadow-md"
+                className=" bg-zelena-500 rounded-md py-2 px-2 text-gray-100 hover:bg-zelena-600 drop-shadow-md "
               >
                 Savings
               </button>
 
-              <span class="relative flex h-3 w-3">
+              <span class="relative flex h-3 w-3 mr-24 sm:mr-0 ">
                 <span class="animate-ping absolute -top-4 right-3/4 inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                 <span class="relative inline-flex -top-4 right-3/4 rounded-full h-3 w-3 bg-red-500"></span>
               </span>

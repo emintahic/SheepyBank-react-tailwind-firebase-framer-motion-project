@@ -36,29 +36,29 @@ export const Auth = () => {
     >
       <div className="py-8 bg-white mx-auto">
         <motion.dt
-          initial={{ x: 80 }}
-          animate={{ x: -330 }}
+          initial={{ x: 10 }}
+          animate={{ x: -210 }}
           transition={{ delay: 2 }}
-          className="justify-center flex gap-4 text-9xl font-extrabold sm:text-7xl md:text-8xl "
+          className="justify-center flex gap-4 text-4xl font-extrabold sm:text-7xl md:text-8xl "
         >
           Save with <dt className="text-zelena-800">SheepyBank</dt>!{" "}
         </motion.dt>
 
         <motion.dd
-          initial={{ x: 50 }}
+          initial={{ x: 100 }}
           animate={{ x: 0 }}
           transition={{ type: "spring", stiffness: 100, delay: 0.8 }}
-          className="mt-10 text-2xl "
+          className="mt-10 text-2xl"
         >
-          Track your expenses now and be the part of 35% of humans who knows how
-          to deal with money!{" "}
+          Track your expenses now and save your finances from chaos... like this
+          landing page!{" "}
         </motion.dd>
 
         <motion.button
           initial={{ y: 0 }}
           animate={{ y: 50, opacity: 1 }}
           transition={{ type: "spring", stiffness: 100, delay: 3 }}
-          className="tooltip  mt-24 bg-gray-200 rounded-lg px-2 py-2 font-semibold text-xl pl-10 hover:bg-gray-300 hover:drop-shadow-sm"
+          className="tooltip  sm:mt-24 mt:24 bg-gray-200 rounded-lg px-2 py-2 font-semibold text-xl pl-10 hover:bg-gray-300 hover:drop-shadow-sm"
           data-tip="NOTE FOR TESTERS: This gives us the access to your name, profile photo and links history to your Google account. It is the easiest and safest way to sign in. Provided by: Firebase and Google"
           onClick={signInWithGoogle}
         >

@@ -65,12 +65,34 @@ export const Home = () => {
             Sign Out
           </button> */}
 
-          <div className=" mt-6 rounded-lg drop-shadow-sm gap-7 flex flex-row items-center justify-stretch ">
-            <div
-              className="px-10 rounded-lg h-72 py-9  bg-white  text-right font-semibold leading-7 text-gray-900"
-              style={{ maxHeight: "270px", maxWidth: "270px" }}
+          <div className=" mt-6 rounded-lg drop-shadow-sm gap-7 flex flex-col sm:flex-row items-center justify-stretch ">
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "100%", opacity: 1 }}
+              className="bg-cover  flex-grow max-w-full rounded-lg drop-shadow-sm sm:hidden inline-block"
+              style={{ maxHeight: "270px", width: "540px" }}
             >
-              <div className="absolute  -left-2 -top-2 flex h-10 w-10 items-center justify-center rounded-lg bg-zelena-500 animate-bounce">
+              <img className="rounded-lg" src="assets\irelandsheep.png" />
+              <motion.dt
+                initial={{ display: "none", opacity: 0 }}
+                animate={{ display: "inline-block", opacity: 1 }}
+                className="absolute top-7 right-24 sm:text-6xl text-4xl font-medium font-sans text-gray-50"
+              >
+                Hey, {name}
+              </motion.dt>
+              <motion.dt
+                initial={{ display: "none", opacity: 0 }}
+                animate={{ display: "inline-block", opacity: 1 }}
+                className="absolute bottom-8 sm:right-24 right-36 text-xl  font-medium font-sans text-white"
+              >
+                Welcome back!
+              </motion.dt>
+            </motion.div>
+            <div
+              className="px-10 rounded-lg h-72 py-9  bg-white text-left  sm:text-right font-semibold leading-7 text-gray-900 max-h-[270px] sm:max-w-[270px] max-w-[540px] w-[450px]"
+              // style={{ maxHeight: "270px", maxWidth: "270px" }}
+            >
+              <div className="absolute  -left-2 sm:-top-2 top-52 flex h-10 w-10 items-center justify-center rounded-lg bg-zelena-500 animate-bounce">
                 <CurrencyDollarIcon
                   className=" h-6 w-6 text-white"
                   aria-hidden="true"
@@ -99,8 +121,8 @@ export const Home = () => {
               </dl>
             </div>
             <div
-              className=" px-10  rounded-lg py-10 bg-white"
-              style={{ maxHeight: "270px", maxWidth: "270px" }}
+              className=" px-10  rounded-lg py-10 bg-white max-h-[270px] sm:max-w-[270px] max-w-[540px] w-[450px]"
+              // style={{ maxHeight: "270px", maxWidth: "270px" }}
             >
               <form
                 className="pt-0 add-transaction flex flex-col items-center max-h-48 h-fit gap-2"
@@ -160,21 +182,24 @@ export const Home = () => {
             <motion.div
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "100%", opacity: 1 }}
-              className="bg-cover md:inline-block flex-grow max-w-full rounded-lg drop-shadow-sm sm:hidden "
+              className="bg-cover  flex-grow max-w-full rounded-lg drop-shadow-sm sm:inline-block hidden "
               style={{ maxHeight: "270px", width: "540px" }}
             >
-              <img className="rounded-lg" src="assets\irelandsheep.png" />
+              <img
+                className="rounded-lg h-[270px]"
+                src="assets\irelandsheep.png"
+              />
               <motion.dt
                 initial={{ display: "none", opacity: 0 }}
                 animate={{ display: "inline-block", opacity: 1 }}
-                className="absolute top-7 right-24 text-6xl font-medium font-sans text-gray-50"
+                className="absolute top-7 right-24 sm:text-6xl text-4xl font-medium font-sans text-gray-50"
               >
                 Hey, {name}
               </motion.dt>
               <motion.dt
                 initial={{ display: "none", opacity: 0 }}
                 animate={{ display: "inline-block", opacity: 1 }}
-                className="absolute bottom-8 right-24 text-xl font-medium font-sans text-white"
+                className="absolute bottom-8 sm:right-24 right-36 text-xl  font-medium font-sans text-white"
               >
                 Welcome back!
               </motion.dt>
@@ -186,7 +211,7 @@ export const Home = () => {
           "
           >
             {/* from-gray-50 to-gray-100/80 */}
-            <div className="row-span-2 col-span-2 overflow-y-scroll h-[520px] rounded-lg scrollbar-hide overscroll-contain">
+            <div className="row-span-2 sm:col-span-2 col-span-3 overflow-y-scroll h-[510px]  rounded-lg scrollbar-hide overscroll-contain">
               <ul className="flex flex-col gap-2  items-start    ">
                 <dt className="text-xl font-medium font-sans relative text-center">
                   {" "}
@@ -255,7 +280,7 @@ export const Home = () => {
                 })}
               </ul>
             </div>
-            <div className=" col-span-1 md:inline-block rounded-md sm:hidden">
+            <div className=" col-span-1 sm:inline-block rounded-md hidden">
               {goals.slice(0, 2).map((goal) => {
                 const { savingsName, finalAmount, currentAmount, id } = goal;
                 let numberCurrentAmount = Number(currentAmount);

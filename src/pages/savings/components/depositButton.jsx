@@ -7,7 +7,7 @@ export default function depositButton({ numberCurrentAmount, goalId }) {
     <>
       <button
         type="submit"
-        className="w-[90px] inline-flex  justify-center rounded-md bg-zelena-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-zelena-800 sm:ml-3 sm:w-[90px]"
+        className="w-[90px] inline-flex  justify-center rounded-md bg-zelena-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-zelena-800 sm:ml-3 sm:w-[90px] mr-5 sm:mr-0 mt-1 sm:mt-0"
         onClick={setToggle}
       >
         ADD

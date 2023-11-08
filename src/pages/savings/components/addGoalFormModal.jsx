@@ -114,7 +114,7 @@ export default function addGoalFormModal({ toggleAdd }) {
                               className="block w-full rounded-md border-0 py-1.5 pl-4 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-zelena-600 sm:text-sm sm:leading-6 outline-none border-none"
                             />
                             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-1 focus-within:ring-inset focus-within:ring-zelena-600 sm:max-w-md">
-                              <span className="absolute bottom-[52px] -left-[2px] select-none items-center pl-2 text-gray-500 sm:text-sm">
+                              <span className="absolute bottom-[50px] sm:bottom-[52px] -left-[2px] select-none items-center pl-2 text-gray-500 sm:text-sm">
                                 $
                               </span>
                               <input
@@ -127,7 +127,7 @@ export default function addGoalFormModal({ toggleAdd }) {
                               />
                             </div>
                             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-1 focus-within:ring-inset focus-within:ring-zelena-600 sm:max-w-md">
-                              <span className="absolute bottom-[8px] -left-[2px] select-none items-center pl-2 text-gray-500 sm:text-sm">
+                              <span className="absolute bottom-[6px] sm:bottom-[8px] -left-[2px] select-none items-center pl-2 text-gray-500 sm:text-sm">
                                 $
                               </span>
                               <input

@@ -106,7 +106,7 @@ export default function withdrawModal({
                           </div>
                           <div className="mt-2 flex flex-col gap-2 relative rounded-md shadow-sm">
                             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-1 focus-within:ring-inset focus-within:ring-zelena-600 sm:max-w-md">
-                              <span className="absolute bottom-[8px] -left-[2px] select-none items-center pl-2 text-gray-500 sm:text-sm focus:ring-0 ">
+                              <span className="absolute bottom-[6px] sm:bottom-[8px] -left-[2px] select-none items-center pl-2 text-gray-500 sm:text-sm focus:ring-0 ">
                                 $
                               </span>
                               <input
