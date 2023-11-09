@@ -76,7 +76,7 @@ export const Savings = () => {
             ))}
           </div>
           <div className="flex justify-between h-9 max-w-[800px] w-100% bg-white drop-shadow-sm rounded-3xl mx-auto">
-            <dt className="ml-3 py-2 sm:py-1 font-normal text-gray-700 text-sm sm:text-lg">
+            <dt className="sm:ml-3 ml-1 py-2 sm:py-1 font-normal text-gray-700 text-xs sm:text-lg">
               Click the + button and create a new savings goal now!{" "}
             </dt>
             <button
