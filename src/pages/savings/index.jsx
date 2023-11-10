@@ -160,7 +160,7 @@ export const Savings = () => {
                           Saved: {cFormat.format(currentAmount)} /{" "}
                           {cFormat.format(finalAmount)}
                         </dd>
-                        <dd className="text-right right-12 bottom-11 absolute text-base font-sans font-thin text-gray-900">
+                        <dd className="text-right right-12 bottom-[1px] absolute text-base font-sans font-thin text-gray-900">
                           {percentage.toFixed(1)}%
                         </dd>
                       </div>
