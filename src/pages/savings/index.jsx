@@ -79,7 +79,7 @@ export const Savings = () => {
             <dt className="hidden sm:inline-block sm:ml-3 ml-1 py-2 sm:py-1 font-normal text-gray-700 text-xs sm:text-lg">
               Click the + button and create a new savings goal now!{" "}
             </dt>
-            <dt className="sm:hidden sm:ml-3 ml-0 py-2 sm:py-1 font-normal text-gray-700 text-xs sm:text-lg">
+            <dt className="sm:hidden sm:ml-3 ml-1 py-2 sm:py-1 font-normal text-gray-700 text-xs sm:text-lg">
               Click the + button to create a new goal!{" "}
             </dt>
             <button
